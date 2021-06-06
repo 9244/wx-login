@@ -3,7 +3,7 @@
 
 <mapper namespace="com.wx.wxlogin.dao.LoginMapper">
     <select id="getUserCount" resultType="Integer">
-        select  count(1) from t_sold_order
+        select  count(1) from t_sys_user
     </select>
 </mapper>
 

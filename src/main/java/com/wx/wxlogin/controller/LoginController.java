@@ -3,6 +3,7 @@ package com.wx.wxlogin.controller;
 
 import com.wx.wxlogin.service.LoginService;
 import com.wx.wxlogin.util.ResultData;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -20,8 +21,9 @@ public class LoginController {
      * @return
      */
     @GetMapping(value = "/testConnectionSource")
+    @PreAuthorize(value = "hasAnyRole('admin')")
     public ResultData testConnectionSource(){
-        Integer count = loginService.getUserCount();
+         Integer count = loginService.getUserCount();
         return ResultData.ok(count);
     }
 
