@@ -18,19 +18,19 @@
     </properties>
     <dependencies>
 
-        <!--   spring-security     -->
-<!--                <dependency>-->
-<!--                    <groupId>org.springframework.boot</groupId>-->
-<!--                    <artifactId>spring-boot-starter-security</artifactId>-->
-<!--                </dependency>-->
+           <!--spring-security-->
+                <dependency>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-security</artifactId>
+                </dependency>
 
 
-<!--           spring security     -->
-<!--                <dependency>-->
-<!--                    <groupId>org.springframework.security</groupId>-->
-<!--                    <artifactId>spring-security-test</artifactId>-->
-<!--                    <scope>test</scope>-->
-<!--                </dependency>-->
+           <!--spring security-->
+                <dependency>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-test</artifactId>
+                    <scope>test</scope>
+                </dependency>
 
 <!--           spring-web-->
         <dependency>
@@ -76,6 +76,7 @@
             <artifactId>mybatis-spring-boot-starter</artifactId>
             <version>1.3.2</version>
         </dependency>
+
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
