@@ -79,11 +79,6 @@
         </dependency>
 
         <dependency>
-<<<<<<< HEAD
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>3.2.2</version>
-=======
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
@@ -105,7 +100,6 @@
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
             <version>3.2.1</version>
->>>>>>> 36cfae453574b225d5536d8e23788d463d916008
         </dependency>
 
     </dependencies>
