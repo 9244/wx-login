@@ -5,3 +5,17 @@ spring:
     password: root
     username: 1234
     type: com.alibaba.druid.pool.DruidDataSource
+  mail:
+    username: wqc9244@163.com
+    password: GUDCMKRXNMEHBQNJ
+    host: smtp.163.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+    port: 465
+    protocol: smtps
+
+fyq:
+  mail: 1432863634@qq.com
+  wxx: 1523494062@qq.com
