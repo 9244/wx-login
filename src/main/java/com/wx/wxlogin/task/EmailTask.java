@@ -30,7 +30,7 @@ public class EmailTask {
         }
         String now = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         try {
-            emailUtil.sendMessage("宝贝",message);
+            emailUtil.sendMessage("宝贝" + now,message);
             sendCount++;
             logger.info("已累计发送" + sendCount + "条短信");
         } catch (Exception e) {

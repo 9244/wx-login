@@ -15,7 +15,12 @@ spring:
           auth: true
     port: 465
     protocol: smtps
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    port: 5672
 
 fyq:
   mail: 1432863634@qq.com
-  wxx: 1523494062@qq.com
+  wxx: 2318267114@qq.com
