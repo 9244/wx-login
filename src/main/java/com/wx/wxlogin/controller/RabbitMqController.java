@@ -16,11 +16,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/rabbitmq")
 public class RabbitMqController {
 
+
+
+
     @Autowired
     RabbitTemplate rabbitTemplate;
 
     @GetMapping(value = "/sendMesage/{msg}")
     public void sendMesage(@PathVariable(value = "msg") String msg){
+
         rabbitTemplate.convertAndSend("directRouting",msg);
     }
 }

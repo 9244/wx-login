@@ -1,6 +1,12 @@
 package com.wx.wxlogin.util;
 
+import lombok.SneakyThrows;
+
 import java.util.Arrays;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Stream;
 
 /**
@@ -83,6 +89,21 @@ public class SortUtil {
         quickSort(array, low, right - 1);
         quickSort(array, right + 1, height);
     }
+
+//    public void blockQueueTest() throws InterruptedException {
+//        ExecutorService executorService = Executors.newFixedThreadPool(10);
+//        BlockingQueue<String> blockingQueue = new ArrayBlockingQueue(100);
+//        executorService.execute(new Runnable() {
+//            @SneakyThrows
+//            @Override
+//            public void run() {
+//                blockingQueue.take();
+//            }
+//        });
+//        while (true){
+//            blockingQueue.put("水");
+//        }
+//    }
 
     /**
      * 堆排序
